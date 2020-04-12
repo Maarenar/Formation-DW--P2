@@ -9,7 +9,7 @@ main{
     flex-direction: row-reverse;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     main{
     flex-direction: column-reverse;
     }
@@ -25,7 +25,7 @@ h1{
     margin: 60px 0 0 0;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     h1{
     font-size: 30px;
     text-align: center;
@@ -38,9 +38,15 @@ h2{
     font-weight: 500;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     h2{
     font-size: 16px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    h2{
+    font-size: 20px;
     }
 }
 
@@ -49,7 +55,13 @@ h3{
     margin: 0;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
+    h3{
+    font-size: 15px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
     h3{
     font-size: 15px;
     }
@@ -63,9 +75,15 @@ p, li, a{
     text-align: justify;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     p, a, li{
     font-size: 15px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    p, a, li{
+    font-size: 14px;
     }
 }
 
@@ -82,7 +100,7 @@ a:hover{
     padding: 0 60px 0 60px;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     #parcours{
     padding: 0;
     width: 90%;
@@ -101,7 +119,7 @@ a:hover{
     margin: 90px 0 90px 0;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     #titre{
     margin-top: 25px;
     display: flex;
@@ -115,7 +133,7 @@ a:hover{
     font-size: 24px;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     #titre p{
     font-size: 20px;
     }
@@ -127,19 +145,19 @@ a:hover{
     background-color: #ff6653;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     #titre div{
     width: 18%;
     }
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     #contenu{
     margin-top: 20px;
     }
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     .parcours_item{
     display: flex;
     flex-direction: column;
@@ -156,7 +174,7 @@ a:hover{
     width: 100%;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     .parcours_item_titre{
     justify-content: center;
     }
@@ -167,11 +185,11 @@ a:hover{
     margin-right: 30px;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     .parcours_item_titre i{
     font-size: 21px;
     margin-right: 10px;
-    }
+    } 
 }
 
 .parcours_sub_item{
@@ -181,7 +199,7 @@ a:hover{
     width: 100%;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     .parcours_sub_item{
     flex-direction: column;
     }
@@ -191,11 +209,19 @@ a:hover{
     font-size: 15px;
 }
 
-@media all and (max-width: 576px){
+@media all and (min-width: 768px) and (max-width: 992px){
+    .parcours_sub_item i{
+    font-size: 10px;
+    }
+}
+
+@media all and (max-width: 768px){
     .parcours_sub_item i{
         font-size: 10px;
     }
 }
+
+
 
 .parcours_sub_item div:first-child{
     display: flex;
@@ -203,7 +229,7 @@ a:hover{
     width: 30%;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     .parcours_sub_item div:first-child{
     width: 100%;
     }
@@ -217,7 +243,7 @@ a:hover{
     width: 70%;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     .parcours_sub_item div:last-child{
     width: 100%;
     }
@@ -227,7 +253,7 @@ a:hover{
     margin-bottom: 10px;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     #recommandations{
     width: 100%;
     }
@@ -238,9 +264,15 @@ a:hover{
     flex-direction: row;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     #recommandations_contenu{
     flex-direction: column;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    #recommandations_contenu{
+        flex-direction: row;
     }
 }
 
@@ -251,7 +283,7 @@ a:hover{
     width: 50%;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     .recommandations_details{
     width: 100%;
     }
@@ -261,7 +293,7 @@ a:hover{
     margin-bottom: 5px;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     .recommandations_details p{
     margin-bottom: 10px;
     }
@@ -277,7 +309,7 @@ a:hover{
     position: relative;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     #profil{
     padding: 0;
     width: 100%;
@@ -291,9 +323,9 @@ a:hover{
     box-shadow: 0px 0px 5px 2px rgba(110,106,110,1);
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     #profil img{
-    max-width: 50%;
+    max-width: 40%;
     }
 }
 
@@ -321,7 +353,7 @@ a:hover{
     padding: 0 20px 0 20px;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     #profil p{
         padding: 0 10px 0 10px;
     }
@@ -332,7 +364,7 @@ a:hover{
     bottom: 0;
 }
 
-@media all and (max-width: 576px){
+@media all and (max-width: 768px){
     #last{
     position: relative;
     }
@@ -358,4 +390,12 @@ a:hover{
     padding: 10px 10px 10px 12px;
     width: 30px;
     height: 30px;
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    #loisirs i{
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    }
 }
