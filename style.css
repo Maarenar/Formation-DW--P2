@@ -77,13 +77,7 @@ p, li, a{
 
 @media all and (max-width: 768px){
     p, a, li{
-    font-size: 15px;
-    }
-}
-
-@media all and (min-width: 768px) and (max-width: 992px){
-    p, a, li{
-    font-size: 14px;
+    font-size: 16px;
     }
 }
 
@@ -111,6 +105,12 @@ a:hover{
     }
 }
 
+@media all and (min-width: 768px) and (max-width:992px){
+    #parcours{
+    padding: 0 30px 0 30px;
+    }
+}
+
 #parcours i{
     color: #ff6653;
 }
@@ -121,10 +121,10 @@ a:hover{
 
 @media all and (max-width: 768px){
     #titre{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        margin: 25px 0 25px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -221,8 +221,6 @@ a:hover{
     }
 }
 
-
-
 .parcours_sub_item div:first-child{
     display: flex;
     flex-direction: row;
@@ -232,6 +230,12 @@ a:hover{
 @media all and (max-width: 768px){
     .parcours_sub_item div:first-child{
     width: 100%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    .parcours_sub_item div:first-child{
+        width: 35%;
     }
 }
 
@@ -251,6 +255,14 @@ a:hover{
 
 .parcours_sub_item div:last-child h3, p, ul{
     margin-bottom: 10px;
+}
+
+@media all and (max-width: 768px){
+    .date_location{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 @media all and (max-width: 768px){
@@ -293,12 +305,6 @@ a:hover{
     margin-bottom: 5px;
 }
 
-@media all and (max-width: 768px){
-    .recommandations_details p{
-    margin-bottom: 10px;
-    }
-}
-
 #profil{
     width: 25%;
     background-color: rgba(255,102,83,1);
@@ -313,6 +319,12 @@ a:hover{
     #profil{
     padding: 0;
     width: 100%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width:992px){
+    #profil{
+    width: 30%;
     }
 }
 
@@ -373,14 +385,8 @@ a:hover{
 #loisirs{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-
-#loisirs div{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
 }
 
 #loisirs i{
